@@ -35,13 +35,10 @@
           <div class="hero-name">Yuzuki Nishimoto</div>
           <div class="hero-name-ja">西本 佑槻</div>
           <p class="hero-bio">
-            高専情報系4年。これまでチーム開発や個人での開発を行ってきました。現在はBlenderなどでの3Dモデリングに興味があり、取り組んでいます。
+            高専情報系4年。これまでチーム開発や個人での開発を行ってきました。現在はBlenderに興味を持ち、モデリングに取り組んでいます。
           </p>
           <div class="hero-cta">
-            <!-- GitHubのURLを href="#" の部分に入力してください -->
             <a class="btn btn-solid" href="https://github.com/YuNi1005" target="_blank" rel="noopener">GitHub</a>
-            <!-- メールアドレスを yourmail@example.com の部分に入力してください -->
-            <a class="btn" href="rn22104x@st.omu.ac.jp">Contact</a>
           </div>
         </div>
         <div class="hero-avatar reveal">YN</div>
@@ -68,67 +65,51 @@
           - tl-badge : ラベル（例: コンテスト / 資格 / 入学 など、不要なら削除可）
         -->
 
-        <!-- 入学 -->
         <div class="tl-item reveal">
           <div class="tl-dot"></div>
-          <div class="tl-year">20XX</div>
-          <div class="tl-title">◯◯高専 入学</div>
-          <div class="tl-desc">情報系学科に入学。</div>
-          <span class="tl-badge">入学</span>
+          <div class="tl-year">2022.4</div>
+          <div class="tl-title">大阪公立大学工業高等専門学校 入学</div>
         </div>
 
-        <!-- 2年進級 -->
         <div class="tl-item reveal">
           <div class="tl-dot"></div>
-          <div class="tl-year">20XX</div>
-          <div class="tl-title">2年進級</div>
+          <div class="tl-year">2023.4</div>
+          <div class="tl-title">2年進級 知能情報コース配属</div>
         </div>
-
-        <!-- 3年進級 -->
-        <div class="tl-item reveal">
-          <div class="tl-dot"></div>
-          <div class="tl-year">20XX</div>
-          <div class="tl-title">3年進級</div>
-        </div>
-
-        <!-- 4年進級 -->
-        <div class="tl-item reveal">
-          <div class="tl-dot"></div>
-          <div class="tl-year">20XX</div>
-          <div class="tl-title">4年進級</div>
-        </div>
-
-        <!-- コンテスト本選（highlight で強調） -->
+                
         <div class="tl-item highlight reveal">
           <div class="tl-dot"></div>
-          <div class="tl-year">20XX</div>
-          <div class="tl-title">◯◯コンテスト 本選出場</div>
-          <div class="tl-desc">補足説明があればここに記入してください。</div>
+          <div class="tl-year">2023.5</div>
+          <div class="tl-title">Hack U 参加</div>
+          <div class="tl-desc">Yahoo!主催のイベントHack U に参加し、大阪本社で発表会を行った。</div>
           <span class="tl-badge">コンテスト</span>
         </div>
 
-        <!--
-          ▼ 追加する場合はここにコピーして貼り付けてください ▼
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-year">2025.4</div>
+          <div class="tl-title">3年進級</div>
+        </div>
 
-          通常:
-          <div class="tl-item reveal">
-            <div class="tl-dot"></div>
-            <div class="tl-year">20XX</div>
-            <div class="tl-title">タイトル</div>
-            <div class="tl-desc">説明（不要なら削除可）</div>
-            <span class="tl-badge">ラベル（不要なら削除可）</span>
-          </div>
+        <div class="tl-item highlight reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-year">2025.6</div>
+          <div class="tl-title">ITパスポート試験 合格</div>
+          <span class="tl-badge">資格</span>
+        </div>
 
-          強調:
-          <div class="tl-item highlight reveal">
-            <div class="tl-dot"></div>
-            <div class="tl-year">20XX</div>
-            <div class="tl-title">タイトル</div>
-            <div class="tl-desc">説明（不要なら削除可）</div>
-            <span class="tl-badge">ラベル（不要なら削除可）</span>
-          </div>
-        -->
+        <div class="tl-item highlight reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-year">2025.9</div>
+          <div class="tl-title">第37回全国高専プロコン 本選出場</div>
+          <span class="tl-badge">コンテスト</span>
+        </div>
 
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-year">2026.4</div>
+          <div class="tl-title">4年進級</div>
+        </div>
       </div>
     </section>
 
@@ -143,28 +124,41 @@
 
         <!--
           ▼ 作品カード追加方法 ▼
-          以下のブロックをコピーして必要な数だけ追加してください。
+          data-* 属性にモーダルの内容を書く
+
+          data-title     : 作品名
+          data-desc      : モーダルに表示する詳しい説明
+          data-tags      : 使用技術をカンマ区切りで（例: Python,Next.js,Docker）
+          data-thumb-bg  : サムネイル背景色（画像なしの場合）
+          data-thumb-img : サムネイル画像パス（なければ空のまま）
+          data-github    : GitHubリンク（なければ空のまま）
+
           - work-title : 作品名
           - work-desc  : 一言説明
           - work-tag   : 使用技術（必要な数だけ <span class="work-tag"> を追加）
           - work-thumb : 背景色は style="background:#E6F1FB;" などで変更可
         -->
-
-        <!-- ===== 作品カード例1（この行から削除してください） ===== -->
-        <div class="work-card reveal">
-          <div class="work-thumb" style="background:#E6F1FB;">作品サムネイル</div>
+        
+        <div class="work-card reveal"
+          data-title="簡易スロットゲーム"
+          data-desc="このプログラムは高専２年になり、知能情報コースに配属され、授業で習ったことを元に作成した、スロットゲームです。
+          当時の技術力では想定していた挙動をするプログラムが書けていなかったため、本科4年になり改めてブラッシュアップを行いました。"
+          data-tags="Python,Jupyter Notebook"
+          data-thumb-bg="#E6F1FB"
+          data-thumb-img=""
+          data-github="https://github.com/YuNi1005/colab"
+        >
+          <div class="work-thumb" style="background:#E6F1FB;"></div>
           <div class="work-body">
-            <div class="work-title">作品タイトル</div>
-            <div class="work-desc">この作品の説明を1〜2文で書いてください。</div>
+            <div class="work-title">簡易スロットゲーム</div>
+            <div class="work-desc">Google colabを使用して作成した、簡易的なスロットゲームです。</div>
             <div class="work-footer">
               <span class="work-tag">Python</span>
-              <span class="work-tag">Next.js</span>
+              <span class="work-tag">Jupyter Notebook</span>
             </div>
           </div>
         </div>
-        <!-- ===== 作品カード例1ここまで ===== -->
 
-        <!-- ===== 作品カード例2（この行から削除してください） ===== -->
         <div class="work-card reveal">
           <div class="work-thumb" style="background:#EAF3DE;">作品サムネイル</div>
           <div class="work-body">
@@ -176,9 +170,7 @@
             </div>
           </div>
         </div>
-        <!-- ===== 作品カード例2ここまで ===== -->
 
-        <!-- 追加枠（自由に増やせます） -->
         <div class="work-card-add reveal">
           <div class="plus">+</div>
           <div class="add-label">add work</div>
@@ -241,7 +233,6 @@
         </div>
         <!--
           ▼ 資格・受賞歴の追加方法 ▼
-          以下のブロックをコピーして追加してください
         -->
         <!-- 追加例
         <div class="award-item reveal">
