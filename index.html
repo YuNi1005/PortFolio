@@ -127,6 +127,7 @@
           data-* 属性にモーダルの内容を書く
 
           data-title     : 作品名
+          data-period    : 制作時期（例: 2024.06 — 2024.08）
           data-desc      : モーダルに表示する詳しい説明
           data-tags      : 使用技術をカンマ区切りで（例: Python,Next.js,Docker）
           data-thumb-bg  : サムネイル背景色（画像なしの場合）
@@ -141,6 +142,7 @@
         
         <div class="work-card reveal"
           data-title="簡易スロットゲーム"
+          data-period="2023.07"
           data-desc="このプログラムは高専２年になり、知能情報コースに配属され、授業で習ったことを元に作成した、スロットゲームです。
           当時の技術力では想定していた挙動をするプログラムが書けていなかったため、本科4年になり改めてブラッシュアップを行いました。GitHubはGoogleColabで作成したものをまとめたリポジトリです。"
           data-tags="Python,Jupyter Notebook"
@@ -163,11 +165,11 @@
           data-title=""
           data-desc=""
           data-tags=""
-          data-thumb-bg="#EAF3DE"
+          data-thumb-bg="#E6F1FB"
           data-thumb-img=""
           data-github=""
         >
-          <div class="work-thumb" style="background:#EAF3DE;"></div>
+          <div class="work-thumb" style="background:#E6F1FB;"></div>
           <div class="work-body">
             <div class="work-title"></div>
             <div class="work-desc"></div>
@@ -268,9 +270,9 @@
         <p class="contact-sub">お気軽にご連絡ください。</p>
         <div class="contact-links">
           <!-- GitHubのURLを href="#" の部分に入力してください -->
-          <a class="btn btn-solid" href="#" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn-solid" href="https://github.com/YuNi1005" target="_blank" rel="noopener">GitHub</a>
           <!-- メールアドレスを yourmail@example.com の部分に入力してください -->
-          <a class="btn" href="/cdn-cgi/l/email-protection#fc8593898e919d9590bc99849d918c9099d29f9391"><span class="__cf_email__" data-cfemail="3c4553494e515d55507c59445d514c5059125f5351">[email&#160;protected]</span></a>
+          <a class="btn" href="mailto:rn22104x@st.omu.ac.jp">Contact</a>
         </div>
       </div>
     </section>
@@ -279,12 +281,12 @@
 
   <footer>
     <div class="footer-inner">
-      <span class="footer-copy">© 2025 Yuki Nishimoto</span>
+      <span class="footer-copy">© 2026 Yuzuki Nishimoto | All rights reserved.</span>
       <div class="footer-links">
         <!-- GitHubのURLを href="#" の部分に入力してください -->
-        <a href="#" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://github.com/YuNi1005" target="_blank" rel="noopener">GitHub</a>
         <!-- メールアドレスを yourmail@example.com の部分に入力してください -->
-        <a class="btn" href="#">Contact</a>
+        <a class="btn" href="mailto:rn22104x@st.omu.ac.jp">Contact</a>
       </div>
     </div>
   </footer>
@@ -298,6 +300,7 @@
           <div class="modal-title" id="modalTitle"></div>
           <button class="modal-close" id="modalClose">&#x2715;</button>
         </div>
+        <div class="modal-period" id="modalPeriod"></div>
         <p class="modal-desc" id="modalDesc"></p>
         <div class="modal-tags" id="modalTags"></div>
         <div class="modal-footer" id="modalFooter"></div>

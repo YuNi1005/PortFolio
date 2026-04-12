@@ -375,6 +375,13 @@ footer {
   margin-bottom: 1.25rem;
 }
 .modal-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 1.5rem; }
+.modal-period {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--hint);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.75rem;
+}
 .modal-footer { display: flex; gap: 10px; flex-wrap: wrap; }
 
 /* workカードをクリック可能に */
