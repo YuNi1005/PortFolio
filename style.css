@@ -454,6 +454,58 @@ footer {
   margin-top: 5px;
 }
 
+/* ─── page top button ─── */
+.page-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 0.5px solid var(--border-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.3s ease, transform 0.3s ease, background 0.15s, border-color 0.15s;
+  z-index: 150;
+  padding: 0;
+}
+.page-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.page-top:hover {
+  background: var(--tag-bg);
+  border-color: var(--border-md);
+}
+.page-top-triangle {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 9px solid var(--muted);
+  transition: border-bottom-color 0.15s;
+}
+.page-top:hover .page-top-triangle { border-bottom-color: var(--text); }
+.page-top-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--muted);
+  transition: background 0.15s;
+}
+.page-top:hover .page-top-dot { background: var(--text); }
+
+@media (max-width: 480px) {
+  .page-top { bottom: 1.25rem; right: 1.25rem; }
+}
+
 /* ─── scroll reveal ─── */
 .reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.5s ease, transform 0.5s ease; }
 .reveal.visible { opacity: 1; transform: none; }
@@ -503,7 +555,6 @@ footer {
 
 /* ─── スマホ (max-width: 480px) ─── */
 @media (max-width: 480px) {
-  /* ナビをハンバーガーに切り替え */
   .nav-toggle { display: flex; }
   .nav-links {
     display: none;
@@ -550,7 +601,7 @@ footer {
 
   .contact-box { padding: 1.5rem; }
   .contact-title { font-size: 22px; }
-  
+
   .modal-overlay { padding: 0; align-items: flex-end; }
   .modal {
     max-width: 100%;

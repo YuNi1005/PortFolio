@@ -10,6 +10,17 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
+/* ─── ページトップボタン ─── */
+const pageTop = document.getElementById('pageTop');
+
+window.addEventListener('scroll', () => {
+  pageTop.classList.toggle('visible', window.scrollY > 300);
+});
+
+pageTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
 /* ─── ハンバーガーメニュー ─── */
 const navToggle = document.getElementById('navToggle');
 const navLinks  = document.getElementById('navLinks');
